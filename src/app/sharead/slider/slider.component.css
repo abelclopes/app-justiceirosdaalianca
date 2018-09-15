@@ -1,0 +1,25 @@
+.slider-app{
+    background-size: cover;
+    height: 70%;
+}
+.slider-text{
+    color: #fff !important;
+    background-color: #00000094;
+    font-weight: bold;
+}
+.module-subtitle{
+    color: #fff !important;
+    font-weight: bold;
+}
+.module-title{
+    color: #fff !important;
+    font-weight: bold;
+}
+.imagem-slider{
+    padding-top: 100px;
+}
+/* .logo-bfa{
+    background-image: url('/assets/images/wow/bfa-logo.png');
+    background-size: contain;
+    height: 100%;
+} */

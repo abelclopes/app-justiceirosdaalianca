@@ -1,0 +1,17 @@
+<section
+class="slider-app"
+[ngStyle]="{'background-image':'url(assets/images/wow/imagem-2.jpg)'}"
+>
+  <div class="container imagem-slider" 
+  *ngFor="let item of sliderImagens">
+    <div class="row">
+      <div class="logo-bfa">
+        <img class="img-responsive" width="200px" src="assets/images/wow/bfa-logo.png" alt="">
+      </div>
+      <div class="col-sm-6 col-sm-offset-3 slider-text">
+        <h2 class="module-title font-alt">{{item.imagem}}</h2>
+        <div class="module-subtitle font-serif">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</div>
+      </div>
+    </div>
+  </div>
+</section>

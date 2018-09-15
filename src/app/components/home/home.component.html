@@ -1,0 +1,26 @@
+<app-slider [sliderImagens]="sliderImagens" ></app-slider>
+
+
+
+<section class="module">
+  <div class="container">
+    <div class="row multi-columns-row post-columns">
+      <div *ngFor="let post of posts" class="col-sm-6 col-md-3 col-lg-3">
+        <div class="post">
+          <div class="post-thumbnail"><a href="#"><img src="assets/images/{{post.image}}" alt="Blog-post Thumbnail" /></a></div>
+          <div class="post-header font-alt">
+            <h2 class="post-title"><a href="#">{{post.titulo}}</a></h2>
+            <div class="post-meta">By&nbsp;<a href="#">{{post.autor}}</a>&nbsp;| {{post.dataCreate}} | 3 Comments
+            </div>
+          </div>
+          <div class="post-entry">
+            <p>{{post.resumo}}</p>
+          </div>
+          <div class="post-more"><a class="more-link" href="#">Leia Mais</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="pagination font-alt"><a href="#"><i class="fa fa-angle-left"></i></a><a class="active" href="#">1</a><a href="#">2</a><a
+        href="#">3</a><a href="#">4</a><a href="#"><i class="fa fa-angle-right"></i></a></div>
+  </div>
+</section>

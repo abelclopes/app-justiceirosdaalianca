@@ -1,0 +1,12 @@
+[
+    {
+        "postsId": 1,
+        "titulo": "teste noticia 1",
+        "descricao": "lore ipsulunlore ipsulunlore ipsulunlore ipsulunlore ipsulunlore ipsulun lore ipsulunlore ipsulunlore ipsulunlore ipsulun",
+        "resumo": "lore ipsulunlore ipsulunlore ipsulunlore ipsulunlore ipsulun",
+        "dataCreate": "14-09-2018",
+        "autor": "Abel Lopes",
+        "slug": "teste-noticia-1",
+        "image": "image-1.jpg"
+    }
+]

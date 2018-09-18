@@ -1,9 +1,27 @@
-FROM node:10
-WORKDIR /app
-RUN cd client && npm install
-COPY dist /app
-COPY package.json /app
-RUN npm install
-COPY . /app
-CMD node index.js
-EXPOSE 8081
+# A node.js v8 box
+FROM node:8
+
+# Who(m) to blame if nothing works
+MAINTAINER abellopes@gmail.com
+
+# Create a working directory 
+RUN mkdir -p /usr/src/app
+
+# Switch to working directory
+WORKDIR /usr/src/app
+
+# Copy contents of local folder to `WORKDIR`
+# You can pick individual files based on your need
+COPY . .
+
+# Install nodemon globally
+RUN npm install -g nodemon
+
+# Install dependencies (if any) in package.json
+RUN cd client && npm install && cd .. npm install
+
+# Expose port from container so host can access $PORT
+EXPOSE $PORT
+
+# Start the Node.js app on load
+CMD [ "npm", "start" ]

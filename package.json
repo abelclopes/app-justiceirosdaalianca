@@ -8,6 +8,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "docker.io": "*",
     "express": "^4.16.3"
   }
 }
